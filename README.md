@@ -2,37 +2,43 @@
 
 环境变量：`GLADOS_COOKIE`（必要） 和 `PUSHPLUS_TOKEN`（非必要）
 
- `GLADOS_COOKIE`多个账号需使用 '&' 隔开
+ 如果使用多个账号，则多个`GLADOS_COOKIE`需使用 '&' 隔开
   示例：cookie&cookie&cookie
 
 
-# 食用方法 （github_actions）
+# 食用方法 （基于github_actions）
+## 1.点亮右上角的星星 **star** 激活本项目 
 
- 1.点击右上角 **fork** 按钮 
- 
- 2.在自己仓库中打开此项目
- 
- 3.配置环境变量
- 
- 4.点亮右上角的星星 **star** 激活 actions
- 
- 5.然后点击 Actions 标签查看运行的详细状况
- 
- # 青龙面板
-   直接把 glados_Qinglong.py 文件放到青龙里 环境变量同上。
-   
- # 自动同步上游代码（非必要）
-  环境变量名称 `PAT`
- 点击 https://github.com/settings/tokens 按下图操作 申请一个秘钥 放到环境变量里就可以了
- 
- ![微信截图_20230423132436](https://user-images.githubusercontent.com/70319988/233821350-908a0752-658d-4452-919d-8e7b1acf81f4.png)
-![微信截图_20230423132355](https://user-images.githubusercontent.com/70319988/233821351-f7644740-325b-41cb-8d86-0b9692d9eedb.png)
- 
- # Tips
- 
-   当你签到差不多一个月的时候就不能百分百获得一天的使用额度，而是有几率获得一天的额度。如果觉得好用建议 购买一个30天的pro套餐 就可以一直签到一直续杯了。
+很显然，这是我在骗star
 
-![image](https://user-images.githubusercontent.com/70319988/231369203-c812910a-963d-45b8-98a5-95b2623c25d7.png)
-![image](https://user-images.githubusercontent.com/70319988/199923789-639e8295-b03e-4abd-858e-ff427015512a.png)
-![image](https://user-images.githubusercontent.com/70319988/199923884-d81dd457-ecc5-4de9-b480-191d25217c47.png)
+## 2.点击右上角 **fork** 按钮 
 
+将本项目fork至自己的仓库，如果没有别的需求，可以直接默认选项，直接fork即可
+ 
+## 3.在自己仓库中打开此项目
+
+fork后在自己的仓库中打开此项目
+  
+## 4.配置环境变量
+
+点击自己上面一栏中的Settings进入设置，再选择左边中二级选项Actions
+
+<img width="244" alt="image" src="https://github.com/Alter-Liu/glados_auto/assets/91472748/b6d64c40-aeb1-40ee-a468-3d67e695f7b3">
+
+再点击绿色按钮新建环境变量，名字如图：
+
+<img width="513" alt="image" src="https://github.com/Alter-Liu/glados_auto/assets/91472748/afad468b-d1a0-4581-90a5-a0def29a2906">
+
+#### 第一个参数获取于glodas的官网，按F12检查代码，点击网络，此时点击官网的签到按钮，即会向服务器发送一个cookie，此时我们的浏览器可以在报头中截获该cookie，使用该cookie即可实现免登陆签到（PS：cookie位于checkin——>标题——>cookie）
+
+#### 第二个参数需要自己从github获取（非必须）
+
+点击 https://github.com/settings/tokens 申请一个秘钥 放到环境变量里就可以了
+
+<img width="228" alt="image" src="https://github.com/Alter-Liu/glados_auto/assets/91472748/596c0e72-35e4-4eea-927a-4d4d2a056fb7">
+
+PS：见到token就赶紧复制，设置完后你这辈子见不到它了
+
+## 5.然后点击 Actions 标签查看运行的详细状况
+ 
+Tips:不要修改系统变量的名字，如果你会自行修改工作流文件就当我放屁
