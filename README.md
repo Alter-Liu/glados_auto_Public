@@ -31,7 +31,7 @@ fork后在自己的仓库中打开此项目
 
 <img width="513" alt="image" src="https://github.com/Alter-Liu/glados_auto/assets/91472748/afad468b-d1a0-4581-90a5-a0def29a2906">
 
-#### 第一个参数获取于glodas的官网，按F12检查代码，点击网络，此时点击官网的签到按钮，即会向服务器发送一个cookie，此时我们的浏览器可以在报头中截获该cookie，使用该cookie即可实现免登陆签到（PS：cookie位于checkin——>标题——>cookie）
+#### 第一个参数获取于glodas的官网，按F12检查代码，点击网络，此时点击官网的签到按钮，即会向服务器发送一个cookie，此时我们的浏览器可以在报头中截获该cookie，使用该cookie即可实现免登陆签到（PS：cookie位于checkin—>标头—>cookie）
 
 #### 第二个参数需要自己从Pushplus获取（非必须）
 
