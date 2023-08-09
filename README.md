@@ -2,8 +2,10 @@
 
 环境变量：`GLADOS_COOKIE`（必要） 和 `PUSHPLUS_TOKEN`（非必要）
 
- 如果使用多个账号，则多个`GLADOS_COOKIE`需使用 '&' 隔开
+如果使用多个账号，则多个`GLADOS_COOKIE`需使用 '&' 隔开
   示例：cookie&cookie&cookie
+
+ `PUSHPLUS_Token`则是用于推送签到信息
 
 
 # 食用方法 （基于github_actions）
@@ -31,13 +33,13 @@ fork后在自己的仓库中打开此项目
 
 #### 第一个参数获取于glodas的官网，按F12检查代码，点击网络，此时点击官网的签到按钮，即会向服务器发送一个cookie，此时我们的浏览器可以在报头中截获该cookie，使用该cookie即可实现免登陆签到（PS：cookie位于checkin——>标题——>cookie）
 
-#### 第二个参数需要自己从github获取（非必须）
+#### 第二个参数需要自己从Pushplus获取（非必须）
 
-点击 https://github.com/settings/tokens 申请一个秘钥 放到环境变量里就可以了
+点击<https://www.pushplus.plus/>申请一个秘钥,放到环境变量里就可以了
 
 <img width="228" alt="image" src="https://github.com/Alter-Liu/glados_auto/assets/91472748/596c0e72-35e4-4eea-927a-4d4d2a056fb7">
 
-PS：见到token就赶紧复制，设置完后你这辈子见不到它了
+
 
 ## 5.然后点击 Actions 标签查看运行的详细状况
  
