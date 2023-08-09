@@ -5,7 +5,7 @@
 如果使用多个账号，则多个`GLADOS_COOKIE`需使用 '&' 隔开
   示例：cookie&cookie&cookie
 
- `PUSHPLUS_Token`则是用于推送签到信息
+ `PUSHPLUS_TOKEN`则是用于推送签到信息
 
 
 # 食用方法 （基于github_actions）
