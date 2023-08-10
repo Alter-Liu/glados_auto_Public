@@ -1,4 +1,6 @@
-import requests,json,os
+import requests
+import json
+import os
 # -------------------------------------------------------------------------------------------
 # github workflows
 # -------------------------------------------------------------------------------------------
@@ -7,11 +9,10 @@ if __name__ == '__main__':
     sckeys = os.environ.get("PUSHPLUS_TOKEN", []).split("&")
 # 推送内容
     sendContent = ''
-# glados账号cookie 直接使用数组 如果使用环境变量需要字符串分割一下
+# glados账号cookie 直接使用列表，如果需要多个账号则用&分割，这里使用split进行分割
     cookies = os.environ.get("GLADOS_COOKIE", []).split("&")
     if cookies[0] == "":
         print('未获取到COOKIE变量') 
-        cookies = []
         exit(0)
     url= "https://glados.rocks/api/user/checkin"
     url2= "https://glados.rocks/api/user/status"
