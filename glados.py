@@ -41,9 +41,6 @@ if __name__ == '__main__':
                                 data=json.dumps(payload))
         state = requests.get(url2,
                              headers={'cookie': cookie, 'referer': referer, 'origin': origin, 'user-agent': useragent})
-        console_data = requests.get(url3,
-                                    headers={'cookie': cookie, 'referer': referer, 'origin': origin,
-                                             'user-agent': useragent})
         # --------------------------------------------------------------------------------------------------------#
         time = state.json()['data']['leftDays']
         time = time.split('.')[0]
