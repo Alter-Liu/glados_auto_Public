@@ -19,9 +19,7 @@ if __name__ == '__main__':
     # 用户姓名
     users = ['Lyx', 'Wzq']
     # glados账号cookie 直接使用列表，如果需要多个账号则用&分割，这里使用split进行分割
-    # cookies = os.environ.get("GLADOS_COOKIE", []).split("&")
-    cookies = [
-        '_gid=GA1.2.1598311012.1691538175; koa:sess=eyJ1c2VySWQiOjM4NDQ4NiwiX2V4cGlyZSI6MTcxNzQ1ODIyMjA1MSwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=60Wzij_n94bG9yYI_3Rku9WcINw; Cookie=enabled; Cookie.sig=lbtpENsrE0x6riM8PFTvoh9nepc; _gat_gtag_UA_104464600_2=1; _ga=GA1.1.1267095568.1691538174; _ga_CZFVKMNT9J=GS1.1.1691570967.2.1.1691570986.0.0.0']
+    cookies = os.environ.get("GLADOS_COOKIE", []).split("&")
     if cookies[0] == "":
         print('未获取到COOKIE变量')
         sendContent = '未获取到cookies'
@@ -62,10 +60,6 @@ if __name__ == '__main__':
     # --------------------------------------------------------------------------------------------------------#
     if sckeys != "":
         for sckey, email, time_user, mess, user in zip(sckeys, emails, time_users, messes, users):
-            print(email)
-            print(time_user)
-            print(mess)
-            print(user)
             sendContent = '<p>Dear {}</p>'.format(user) + \
                           '<p style="text-indent:2em">  About your account({}) Check-in feedback information is </p>'.format(email) + '<p style="text-align:center">{}</p>'.format(mess) + \
                           '<p style="text-indent:2em">And the remaining days of your account is</p>'+'<p style="text-align:center"> {} </p>'.format(time_user) + \
