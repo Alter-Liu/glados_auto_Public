@@ -73,7 +73,7 @@ if __name__ == '__main__':
                     'http://www.pushplus.plus/send?token=' + sckey + '&title=' + "A notice for " + user + '&content=' + sendContent)
             else:
                 sendContent = '<p>Dear {}</p>'.format(user) + \
-                              '<p style="text-indent:2em">  About your account({}) Check-in feedback information is </p>'.format(email) + '<p style="text-align:center">{}</p>'.format(mess) + \
+                              '<p style="text-indent:2em">  The check-in feedback about your account ({}) is </p>'.format(email) + '<p style="text-align:center">{}</p>'.format(mess) + \
                               '<p style="text-indent:2em">And the remaining days of your account is</p>'+'<p style="text-align:center"> {} </p>'.format(time_user) + \
                               '<p>Best regards from LawnJerch!</p>'
                 requests.get(
