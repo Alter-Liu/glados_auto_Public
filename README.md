@@ -45,3 +45,8 @@ fork后在自己的仓库中打开此项目
 ## 5.然后点击 Actions 标签查看运行的详细状况
  
 Tips:不要修改系统变量的名字，如果你会自行修改工作流文件就当我放屁
+
+# 结果展示
+
+<img width="641" alt="屏幕截图 2023-08-11 170147" src="https://github.com/Alter-Liu/glados_auto/assets/91472748/1811a2c1-ecb9-489f-a863-bb924af47878">
+
