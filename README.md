@@ -26,11 +26,11 @@ fork后在自己的仓库中打开此项目
 
 点击自己上面一栏中的Settings进入设置，再选择左边中二级选项Actions
 
-<img width="244" alt="image" src="https://github.com/Alter-Liu/glados_auto/assets/91472748/b6d64c40-aeb1-40ee-a468-3d67e695f7b3">
+<img width="244" alt="image1" src="https://github.com/Alter-Liu/glados_auto/assets/91472748/b6d64c40-aeb1-40ee-a468-3d67e695f7b3">
 
 再点击绿色按钮新建环境变量，名字如图：
 
-<img width="513" alt="image" src="https://github.com/Alter-Liu/glados_auto/assets/91472748/afad468b-d1a0-4581-90a5-a0def29a2906">
+<img width="513" alt="image2" src="https://github.com/Alter-Liu/glados_auto/assets/91472748/afad468b-d1a0-4581-90a5-a0def29a2906">
 
 #### 第一个参数获取于glodas的官网，按F12检查代码，点击网络，此时点击官网的签到按钮，即会向服务器发送一个cookie，此时我们的浏览器可以在报头中截获该cookie，使用该cookie即可实现免登陆签到（PS：cookie位于checkin—>标头—>cookie）
 
@@ -38,7 +38,7 @@ fork后在自己的仓库中打开此项目
 
 点击<https://www.pushplus.plus/>申请一个秘钥,放到环境变量里就可以了
 
-<img width="228" alt="image" src="https://github.com/Alter-Liu/glados_auto/assets/91472748/596c0e72-35e4-4eea-927a-4d4d2a056fb7">
+<img width="228" alt="image3" src="https://github.com/Alter-Liu/glados_auto/assets/91472748/596c0e72-35e4-4eea-927a-4d4d2a056fb7">
 
 
 
@@ -48,5 +48,5 @@ Tips:不要修改系统变量的名字，如果你会自行修改工作流文件
 
 # 结果展示
 
-<img width="641" alt="屏幕截图 2023-08-11 170147" src="https://github.com/Alter-Liu/glados_auto/assets/91472748/1811a2c1-ecb9-489f-a863-bb924af47878">
+<img width="641" alt="image4" src="https://github.com/Alter-Liu/glados_auto/assets/91472748/1811a2c1-ecb9-489f-a863-bb924af47878">
 
