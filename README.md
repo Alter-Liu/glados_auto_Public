@@ -1,12 +1,13 @@
 # glados自动签到
 
-环境变量：`GLADOS_COOKIE`（必要） 和 `PUSHPLUS_TOKEN`（非必要）
+环境变量：`GLADOS_COOKIE`（必要） 、 `PUSHPLUS_TOKEN`（非必要）和 `NAMES`
 
 如果使用多个账号，则多个`GLADOS_COOKIE`需使用 '&' 隔开
-  示例：cookie&cookie&cookie
+示例：cookie&cookie&cookie
 
- `PUSHPLUS_TOKEN`则是用于推送签到信息
+`PUSHPLUS_TOKEN`则是用于推送签到信息,多个推送同理，使用&隔开
 
+`NAMES`用于加入收信息人的名字，如果使用了第二个环境变量，第三个必须加上对应个数的姓名
 
 # 食用方法 （基于github_actions）
 ## 1.点亮右上角的星星 **star** 激活本项目 
